@@ -1,0 +1,57 @@
+
+
+header{
+  height: 10vh;
+  width: 100%;
+  background-color: cornflowerblue;
+}
+
+div{
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+section{
+  width: 100%;
+  /* border: 2px solid; */
+  text-align: center;
+  line-height: inherit;
+  font-size:x-large;
+
+}
+
+.Navigation{
+  /* height: 25vh; */
+  /* line-height: 25vh; */
+  background-color: rgb(175, 197, 236);
+  border-bottom: solid 1px black;
+  color: rgb(31, 108, 241);
+
+}
+
+.MainContent{
+  /* height: 50vh;
+  line-height: 50vh; */
+  background-color: white;
+  color: gray;
+}
+
+.Advertising{
+  /* height: 20vh;
+  line-height: 20vh; */
+  background-color: rgb(179, 240, 179);
+  color: rgb(23, 187, 23);
+}
+
+@media screen and (min-width: 768px){
+div{
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+/* .Navigation, .MainContent, .Advertising{
+    height: 50vh;
+  
+  } */
+}

@@ -1,0 +1,35 @@
+*{
+  background-color: palevioletred;
+}
+div{
+  width: 100%;
+  height:20vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "header header header"
+  "nav main aside"
+  "nav footer footer";
+}
+ div>*{
+  background-color: white;
+  border: 4px solid skyblue;
+  text-align: center;
+} 
+header{
+  grid-area: header;
+}
+nav{
+  grid-area:nav;
+}
+main{
+  grid-area:main;
+}
+aside{
+  grid-area:aside;
+}
+footer{
+  grid-area:footer;
+}
+
